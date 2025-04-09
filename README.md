@@ -1,38 +1,42 @@
-# 🐾 Prontuário Veterinário
+Claro! Aqui está a versão em inglês do seu `README.md`:
 
-Este projeto é um sistema simples em PHP para busca de animais em um prontuário veterinário. A aplicação permite que usuários pesquisem animais pelo nome e visualizem os registros relacionados.
+---
 
-## 📄 Descrição
+# 🐾 Veterinary Medical Record
 
-A página principal (`index.php`) contém um formulário de busca e lógica para exibir todos os animais cadastrados ou filtrar pelos que correspondem ao nome informado.
+This project is a simple PHP system for searching animals in a veterinary medical record. The application allows users to search for animals by name and view related records.
 
-### 🧠 Funcionalidades:
+## 📄 Description
 
-- Exibir todos os animais cadastrados no sistema.
-- Buscar por animais específicos pelo nome.
-- Interface simples com HTML e CSS.
+The main page (`index.php`) contains a search form and logic to display all registered animals or filter them based on the entered name.
 
-## 🚀 Como Usar
+### 🧠 Features:
 
-1. **Requisitos:**
-   - PHP 7.0 ou superior
-   - Servidor local (como XAMPP, WAMP ou MAMP)
-   - Navegador web
+- Display all animals registered in the system.  
+- Search for specific animals by name.  
+- Simple interface with HTML and CSS.  
 
-2. **Instalação:**
+## 🚀 How to Use
 
-   - Clone o repositório ou copie os arquivos para o diretório do seu servidor local.
-   - Certifique-se de que o arquivo `config.php` está configurado corretamente com a conexão ao banco de dados.
-   - A aplicação espera que exista uma classe chamada `AnimalView` com os métodos:
-     - `ExibirTodosAnimais()`
-     - `BuscarPeloNome($nome)`
+1. **Requirements:**
+   - PHP 7.0 or higher  
+   - Local server (such as XAMPP, WAMP, or MAMP)  
+   - Web browser  
 
-3. **Uso:**
+2. **Installation:**
 
-   - Acesse `index.php` via navegador (ex: `http://localhost/seu_projeto/index.php`).
-   - Digite o nome de um animal no campo de busca ou deixe em branco para ver todos.
+   - Clone the repository or copy the files to your local server directory.  
+   - Make sure the `config.php` file is correctly set up with your database connection.  
+   - The application expects a class named `AnimalView` with the following methods:  
+     - `ExibirTodosAnimais()`  
+     - `BuscarPeloNome($nome)`  
 
-## 🗃️ Estrutura do Projeto
+3. **Usage:**
+
+   - Access `index.php` via your browser (e.g., `http://localhost/your_project/index.php`).  
+   - Enter an animal's name in the search field or leave it blank to view all.
+
+## 🗃️ Project Structure
 
 ```
 ├── index.php
@@ -42,27 +46,29 @@ A página principal (`index.php`) contém um formulário de busca e lógica para
 │   └── estiloAtendimento.css
 ```
 
-## 📦 Exemplo da Classe Esperada (`AnimalView`)
+## 📦 Expected Class Example (`AnimalView`)
 
 ```php
 class AnimalView {
     public function ExibirTodosAnimais() {
-        // lógica para exibir todos os animais
+        // logic to display all animals
     }
 
     public function BuscarPeloNome($nome) {
-        // lógica para buscar animal pelo nome
+        // logic to search for an animal by name
     }
 }
 ```
 
-## 📌 Observações
+## 📌 Notes
 
-- O projeto está em desenvolvimento inicial e pode ser expandido com autenticação, cadastro de animais, histórico clínico, etc.
-- A busca é feita por `GET`, tornando possível compartilhar a URL da pesquisa.
+- This project is in early development and can be expanded with features like authentication, animal registration, clinical history, etc.  
+- The search uses the `GET` method, making it possible to share the search URL.
 
-## 📋 Licença
+## 📋 License
 
-Este projeto é livre para uso educacional ou pessoal. Para uso comercial, recomenda-se revisar as dependências e regras de negócio.
+This project is free for educational or personal use. For commercial use, it's recommended to review the dependencies and business rules.
 
 ---
+
+Developed by Wallace Araújo.
